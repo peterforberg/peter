@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <head>
+        <link href="https://fonts.googleapis.com/css?family=Libre+Barcode+128+Text|Press+Start+2P&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <script src="countdown.js"></script>
+        <script src="script.js"></script>
+
+        <title>MOTHER OF 1000s</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <p id="demo" style="display:none"></p>
+        <div class="row">
+        <div class="column left">
+          <div class="buttons">
+            <p>
+            </p>
+            <div id="waterb" style="display:none">
+            <button type="button" onclick="onWaterClick(); gameDisplay(); onRandVarClick()" class="button"><img src="https://cdn.glitch.com/7c26f08c-bc92-478b-9286-5d0f30d14786%2Fwater.png?v=1562950332098" class="input"></button><p></p>
+            </div>
+            <div id="lightb" style="display:none">
+            <button type="button" onclick="onLightClick(); gameDisplay(); onRandVarClick()" class="button" value="LIGHT"><img src="https://cdn.glitch.com/7c26f08c-bc92-478b-9286-5d0f30d14786%2Flight.png?v=1562950332098" class="input"></button><p></p>
+            </div>
+            <div id="snipb" style="display:none">
+            <button type="button" onclick="onSnipClick(); gameDisplay(); onRandVarClick()" class="button" value="SNIP"><img src="https://cdn.glitch.com/7c26f08c-bc92-478b-9286-5d0f30d14786%2Fsnip.png?v=1562950332020" class="input"></button><p></p>
+            </div>
+            <div id="ignoreb" style="display:none">
+            <button type="button" onclick="onIgnoreClick(); gameDisplay(); onRandVarClick()" class="button"><img src="https://cdn.glitch.com/7c26f08c-bc92-478b-9286-5d0f30d14786%2Fignore.png?v=1562950332098" class="input" ></button><p></p>
+            </div>
+            <div id="shop" style="display:none">
+            <button type="button" onclick="onIgnoreClick(); gameDisplay(); onRandVarClick()" class="button"><img src="https://cdn.glitch.com/10934f8c-ca36-4889-9400-ccd09fd8b568%2Fshop.png?v=1563810544767" class="input"></button><p></p>
+            </div>
+        </div>
+          </div>
+        <div class="column middle">
+          <img id="display" src="https://cdn.glitch.com/7c26f08c-bc92-478b-9286-5d0f30d14786%2Fplants.gif?v=1562878556559">
+          <p id="text" style="line-height:1.2em">Meet your choe! Your choe is a simple but delicate organism. Just like you, it requires love and attention — but not too much! Together, we can help it grow. </p>
+          <div id="next"><button type="button" onclick="tutorial(); gameDisplay()" class="button">NEXT</button><p>
+            </p>
+            <div id="skip"><button type="button" onclick="skip(); gameDisplay()" class="button">SKIP TUTORIAL</button>
+            </div>
+            </div>
+          <div id="secret" style="display:none">
+          
+          <!--<form action="/action_page.php">-->
+Secret: <input type="text" name="FirstName"><br><p>
+          
+            </p>
+            <button type="button" value="Submit" text="Submit" onclick="onWaterClick(); gameDisplay()">SUBMIT</button>
+<!--</form>-->
+            </div>
+          </div>
+        <div class="column right">
+          <nobr>Water: <p id="water"></p></nobr>
+          Warmth: <p id="light"></p>
+          Children: <p id="snip"></p>
+          Joy: <p id="ignore"></p>
+          <div id="randvar2" style="display:none">Rainy day funds: <p id="rainy"></p></div>
+          <div id="randvar1" style="display:none">%GDP from tourism: <p id="tourism"></p></div>
+          <div id="randvar3" style="display:none">Social unrest: <p id="social"></p></div>
+          <div id="randvar4" style="display:none">Government distrust (%): <p id="gov"></p></div>
+          <div id="randvar5" style="display:none">Visas awarded to exploitative journalists: <p id="visas"></p></div>
+          </div>
+        
+        
+      </div>
+        
+
+    </body>
+</html>
